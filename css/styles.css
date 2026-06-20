@@ -1656,6 +1656,7 @@ body.light .detail-hero-visual {
     padding: 0 18px;
     font-size: 13px;
     white-space: nowrap;
+    width: auto;
   }
 
   .project-grid,
@@ -1863,6 +1864,11 @@ body.light .detail-hero-visual {
     font-size: 11px;
   }
 
+  .btn {
+    width: auto;
+    white-space: nowrap;
+  }
+
   .detail-hero-copy h1 {
     font-size: 22px;
   }
@@ -1871,6 +1877,7 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
 
