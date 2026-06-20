@@ -48,3 +48,17 @@
     window.location.href = `mailto:hdc030514@163.com?subject=${subject}&body=${body}`;
   });
 })();
+
+  // 项目整张卡片可点击
+  document.querySelectorAll(".project-card").forEach((card) => {
+    const detailLink = card.querySelector('.card-actions a, .card-foot a[href*="-detail"], .card-foot a[href*="donation"], .card-foot a[href*="ai-assistant"]');
+    if (!detailLink) return;
+    card.style.cursor = "pointer";
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      const href = detailLink.getAttribute("href");
+      if (href) window.location.href = href;
+    });
+  });
+
+
