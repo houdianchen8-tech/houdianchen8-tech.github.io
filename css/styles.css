@@ -1198,6 +1198,7 @@ select {
 
 .cta-band {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
@@ -1898,6 +1899,7 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
 
