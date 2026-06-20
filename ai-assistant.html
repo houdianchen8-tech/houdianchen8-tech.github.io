@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>智慧校园 AI 助手 | 侯殿臣</title>
+    <meta name="description" content="智慧校园 AI 助手项目详情，基于 RAG 架构的校园问答系统，传智播客实习项目。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="project-detail-hero container">
+        <div class="detail-hero-copy">
+          <a class="back-link" href="projects.html">← 返回项目</a>
+          <span class="eyebrow">AI Assistant</span>
+          <h1>智慧校园 AI 助手</h1>
+          <p>
+            基于 RAG（检索增强生成）架构的校园 AI 问答系统。实现对课程信息、校园公告、办事流程等多源数据的语义检索与智能应答。我在实习期间作为后端核心开发者参与构建，负责数据服务模块开发、知识检索链路构建与系统优化。
+          </p>
+          <div class="tags detail-tags">
+            <span>RAG</span>
+            <span>Milvus</span>
+            <span>FAISS</span>
+            <span>Java</span>
+            <span>Prompt Engineering</span>
+            <span>向量数据库</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
+            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">讨论项目 <span>→</span></a>
+          </div>
+        </div>
+        <div class="detail-hero-visual">
+          <img src="assets/project-ai.jpg" alt="智慧校园 AI 助手项目界面" />
+          <div class="assistant-console">
+            <div class="console-dots"><span></span><span></span><span></span></div>
+            <p>// RAG 检索流程</p>
+            <p>用户请求 → 意图解析</p>
+            <p>→ 向量检索(Milvus)</p>
+            <p>→ 上下文拼接</p>
+            <p>→ LLM 生成 → 应答</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="detail-stat-grid">
+          <article>
+            <strong>35%</strong>
+            <span>接口延迟降低</span>
+          </article>
+          <article>
+            <strong>40%</strong>
+            <span>开发周期缩短</span>
+          </article>
+          <article>
+            <strong>多源</strong>
+            <span>数据接入能力</span>
+          </article>
+          <article>
+            <strong>稳定</strong>
+            <span>多并发保障</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>项目背景</h2>
+          <p>
+            该项目是江苏传智播客教育科技股份有限公司的智慧校园产品线中的重要组成部分。校园信息分散在网站、公告栏和各个部门系统中，师生查找信息效率低、渠道分散。项目的目标是构建一套基于 AI 的智能问答系统，让师生可以通过自然语言获取校园相关信息。
+          </p>
+          <p>
+            我作为后端核心开发者参与其中，负责核心数据服务模块的开发、知识检索链路的构建及系统性能优化工作。
+          </p>
+        </article>
+        <aside class="side-panel project-summary">
+          <h3>项目摘要</h3>
+          <dl>
+            <div><dt>角色</dt><dd>后端核心开发者</dd></div>
+            <div><dt>周期</dt><dd>2025.12 – 2026.02</dd></div>
+            <div><dt>公司</dt><dd>江苏传智播客教育科技</dd></div>
+            <div><dt>架构</dt><dd>RAG / 向量检索 / LLM</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-head compact">
+          <div>
+            <h2>核心能力</h2>
+            <p>以 RAG 架构驱动的智能问答</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="detail-panel">
+            <span class="tool-icon blue">R</span>
+            <h3>语义检索</h3>
+            <p>基于 Milvus / FAISS 向量数据库构建知识检索链路，支持多源校园数据的语义级检索。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon green">C</span>
+            <h3>上下文工程</h3>
+            <p>完成用户请求解析、上下文拼接、模型调用封装，通过 Prompt 设计优化输出质量。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon violet">M</span>
+            <h3>多轮对话</h3>
+            <p>设计多轮对话控制策略，维护对话历史与状态管理，提升交互连贯性。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon orange">M</span>
+            <h3>监控与兜底</h3>
+            <p>建立日志监控与异常处理机制，确保多用户并发场景下的系统稳定运行。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>技术架构</h2>
+          <p>
+            系统采用 RAG（检索增强生成）架构，核心流程分为三个环节：
+          </p>
+          <div class="architecture-flow" aria-label="AI 助手技术架构">
+            <span>用户请求</span>
+            <span>请求解析</span>
+            <span>向量检索</span>
+            <span>上下文拼接</span>
+            <span>模型生成</span>
+          </div>
+          <p style="margin-top:16px;">
+            知识库覆盖课程信息、校园公告、办事流程等多源数据，通过向量化处理后存入 Milvus 数据库。系统根据用户提问进行语义检索，召回相关片段后拼接上下文，交由大模型生成最终回答。
+          </p>
+        </article>
+        <article class="content-panel">
+          <h2>优化成果</h2>
+          <ul class="check-list">
+            <li>通过缓存策略与异步请求优化，接口响应延迟降低约 35%</li>
+            <li>优化 Prompt 设计与多轮对话控制策略，提升模型输出质量</li>
+            <li>借助 Cursor 辅助完成样板代码编写，模块开发周期缩短约 40%</li>
+            <li>建立日志监控与异常处理机制，确保多用户并发场景稳定运行</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section container">
+        <div class="section-head compact">
+          <div>
+            <h2>交付过程</h2>
+            <p>从需求到上线</p>
+          </div>
+        </div>
+        <div class="phase-list">
+          <article>
+            <time>01</time>
+            <h3>需求分析</h3>
+            <p>梳理校园多源数据类型与使用场景，确定语义检索和问答的核心功能边界。</p>
+          </article>
+          <article>
+            <time>02</time>
+            <h3>RAG 链路搭建</h3>
+            <p>完成数据向量化、向量库建设、检索策略设计及 Prompt 模板编写。</p>
+          </article>
+          <article>
+            <time>03</time>
+            <h3>接口开发</h3>
+            <p>实现请求解析、上下文拼接、模型调用封装等核心接口，建立缓存与异步策略。</p>
+          </article>
+          <article>
+            <time>04</time>
+            <h3>测试与优化</h3>
+            <p>多轮对话测试、性能压测、异常场景覆盖，持续调优检索和生成效果。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container cta-band">
+        <div>
+          <h2>需要一个类似的 RAG 系统？</h2>
+          <p>可以从知识库问答 MVP 开始，先验证资料质量和检索效果。</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">联系我 <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 侯殿臣. All rights reserved.</span>
+        <span>用 ❤ 和代码创造价值</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

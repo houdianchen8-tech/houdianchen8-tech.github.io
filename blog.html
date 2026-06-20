@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>博客 | 侯殿臣</title>
+    <meta name="description" content="侯殿臣的技术博客，记录 Java 后端开发、RAG 实践、项目经验和学术成果。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="blog">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero container">
+        <span class="eyebrow">Blog</span>
+        <h1>技术实践与学术思考</h1>
+        <p>记录我在 Java 后端开发、AI 应用构建和项目实战中的经验总结，以及在《环球科学》发表的学术研究成果。</p>
+      </section>
+
+      <section class="section container blog-layout">
+        <div class="blog-main">
+          <article class="post-card" id="rag-practice">
+            <img src="assets/article-agent.jpg" alt="RAG 架构插图" />
+            <div>
+              <div class="post-meta">2026-03 · AI · 10 分钟阅读</div>
+              <h2>从零构建 RAG 系统：智慧校园问答实践</h2>
+              <p>详细拆解在传智播客实习期间构建 RAG 系统的完整流程，包括向量库选型、切片策略、Prompt 设计、缓存优化和监控体系建设。</p>
+              <a class="text-link" href="ai-assistant.html">查看项目 →</a>
+            </div>
+          </article>
+
+          <article class="post-card" id="sql-optimization">
+            <img src="assets/article-toolbox.jpg" alt="SQL 优化插图" />
+            <div>
+              <div class="post-meta">2026-02 · 后端 · 7 分钟阅读</div>
+              <h2>Spring Boot 项目性能优化实录：从慢查询到索引优化</h2>
+              <p>记录在高校物品捐赠系统开发中遇到的列表查询响应慢问题，通过慢查询日志、EXPLAIN 分析、联合索引设计和分页机制的完整优化过程。</p>
+              <a class="text-link" href="donation-detail.html">查看项目 →</a>
+            </div>
+          </article>
+
+          <article class="post-card" id="paper">
+            <img src="assets/article-next.jpg" alt="学术论文插图" />
+            <div>
+              <div class="post-meta">2024.10 · 学术 · 5 分钟阅读</div>
+              <h2>从项目到论文：以第一作者在《环球科学》发表经验分享</h2>
+              <p>以向晋特种行小程序为案例，分享如何将项目实战经验系统化总结为学术论文，包括选题、方法论、实验数据和写作投稿的全过程。</p>
+              <a class="text-link" href="projects.html#xiangjin">查看项目 →</a>
+            </div>
+          </article>
+
+          <article class="post-card" id="wechat-miniapp">
+            <img src="assets/article-product.jpg" alt="微信小程序插图" />
+            <div>
+              <div class="post-meta">2024.06 · 前端 · 6 分钟阅读</div>
+              <h2>微信小程序开发实战：文旅 + 定制出行服务</h2>
+              <p>分享向晋特种行小程序的开发经历，从零学习小程序框架、图片懒加载优化、页面加载速度提升方案到项目上线的完整经验。</p>
+              <a class="text-link" href="projects.html#xiangjin">查看项目 →</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="blog-sidebar">
+          <div class="side-panel">
+            <h3>分类</h3>
+            <a href="#rag-practice">RAG / AI 应用</a>
+            <a href="#sql-optimization">Java 后端</a>
+            <a href="#paper">学术成果</a>
+            <a href="#wechat-miniapp">小程序开发</a>
+          </div>
+          <div class="side-panel">
+            <h3>关于博客</h3>
+            <p>这里记录我在技术学习和项目实践中的真实经验，重点关注后端开发、AI 应用和学术研究。</p>
+            <a class="btn btn-primary full" href="https://github.com/houdianchen8-tech">GitHub <span>→</span></a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

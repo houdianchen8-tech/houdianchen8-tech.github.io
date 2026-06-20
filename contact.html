@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>联系我 | 侯殿臣</title>
+    <meta name="description" content="联系侯殿臣进行项目合作、技术交流或实习机会。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero container">
+        <span class="eyebrow">Contact</span>
+        <h1>与我取得联系</h1>
+        <p>如果你有后端开发、AI 应用构建或项目合作的需求，欢迎联系我。我通常在 24 小时内回复。</p>
+      </section>
+
+      <section class="section container contact-layout">
+        <div class="content-panel">
+          <h2>联系方式</h2>
+          <ul class="contact-list">
+            <li><span>✉</span><div><strong>邮箱</strong><a href="mailto:hdc030514@163.com">hdc030514@163.com</a></div></li>
+            <li><span>◎</span><div><strong>电话</strong><p>15835623083</p></div></li>
+            <li><span>⌖</span><div><strong>GitHub</strong><a href="https://github.com/houdianchen8-tech">github.com/houdianchen8-tech</a></div></li>
+            <li><span>◉</span><div><strong>政治面貌</strong><p>中共预备党员 · 可远程协作</p></div></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>你的称呼</span>
+            <input type="text" name="name" placeholder="例如：张三" required />
+          </label>
+          <label>
+            <span>联系邮箱</span>
+            <input type="email" name="email" placeholder="name@example.com" required />
+          </label>
+          <label>
+            <span>合作方向</span>
+            <select name="topic" required>
+              <option value="">请选择</option>
+              <option>Java 后端开发</option>
+              <option>AI / RAG 应用</option>
+              <option>项目合作</option>
+              <option>实习 / 工作机会</option>
+            </select>
+          </label>
+          <label>
+            <span>项目说明</span>
+            <textarea name="message" rows="6" placeholder="简单描述需求、目标或希望交流的内容" required></textarea>
+          </label>
+          <button class="btn btn-primary full" type="submit">发送消息 <span>→</span></button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>高校物品捐赠系统 | 侯殿臣</title>
+    <meta name="description" content="高校物品捐赠系统项目详情，Spring Boot + MySQL 实现，分层架构设计，性能优化实践。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="project-detail-hero container">
+        <div class="detail-hero-copy">
+          <a class="back-link" href="projects.html">← 返回项目</a>
+          <span class="eyebrow">Donation System</span>
+          <h1>高校物品捐赠系统</h1>
+          <p>
+            围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。负责系统整体架构设计、数据库建模及核心业务逻辑实现，通过 SQL 性能优化将查询效率提升约 30%。
+          </p>
+          <div class="tags detail-tags">
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>RESTful API</span>
+            <span>JWT</span>
+            <span>分层架构</span>
+            <span>MyBatis</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
+            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">查看源码 <span>→</span></a>
+          </div>
+        </div>
+        <div class="detail-hero-visual">
+          <img src="assets/project-commerce.jpg" alt="高校物品捐赠系统界面" />
+          <div class="assistant-console">
+            <div class="console-dots"><span></span><span></span><span></span></div>
+            <p>// 分层架构设计</p>
+            <p>Controller → Service → DAO</p>
+            <p>├── 用户模块</p>
+            <p>├── 物品模块</p>
+            <p>├── 订单模块</p>
+            <p>└── 分类模块</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="detail-stat-grid">
+          <article>
+            <strong>30%</strong>
+            <span>查询效率提升</span>
+          </article>
+          <article>
+            <strong>4</strong>
+            <span>核心实体模块</span>
+          </article>
+          <article>
+            <strong>100+</strong>
+            <span>并发用户验证</span>
+          </article>
+          <article>
+            <strong>Token</strong>
+            <span>权限控制机制</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>项目背景</h2>
+          <p>
+            校园中存在大量闲置物品，如教材、电子产品、生活用品等，这些物品往往在毕业季被丢弃或闲置。与此同时，很多同学又有获取这些物品的需求。传统的校园跳蚤市场受限于信息传播渠道，流转效率低下。
+          </p>
+          <p>
+            该项目旨在通过信息化手段解决这一痛点，设计一套完整的物品捐赠管理系统，实现物品发布、申请、审核、配送和评价的全流程管理。
+          </p>
+        </article>
+        <aside class="side-panel project-summary">
+          <h3>项目摘要</h3>
+          <dl>
+            <div><dt>角色</dt><dd>项目负责人 / 后端开发</dd></div>
+            <div><dt>周期</dt><dd>2025.11 – 2026.03</dd></div>
+            <div><dt>架构</dt><dd>分层架构 Controller/Service/DAO</dd></div>
+            <div><dt>状态</dt><dd>已完成</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-head compact">
+          <div>
+            <h2>核心模块</h2>
+            <p>围绕捐赠全流程设计</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="detail-panel">
+            <span class="tool-icon blue">U</span>
+            <h3>用户管理</h3>
+            <p>注册登录、个人信息管理、Token 权限验证，支持角色权限分级。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon green">I</span>
+            <h3>物品管理</h3>
+            <p>物品发布、分类浏览、条件检索、状态跟踪（在捐/已认领/已完成）。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon violet">O</span>
+            <h3>订单管理</h3>
+            <p>捐赠申请、审核流程、配送跟踪、确认收货全链路闭环管理。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon orange">C</span>
+            <h3>分类系统</h3>
+            <p>多级分类结构，支持按类别、按热度、按时间等多维度排序。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>性能优化实践</h2>
+          <p>
+            在开发过程中遇到物品列表查询响应慢的问题，通过以下步骤定位并解决：
+          </p>
+          <ul class="check-list">
+            <li>开启 MySQL 慢查询日志，捕获瓶颈查询</li>
+            <li>使用 EXPLAIN 分析执行计划，定位到多表关联查询未走索引</li>
+            <li>添加联合索引覆盖查询字段，优化表关联顺序</li>
+            <li>引入分页查询机制，控制单次返回数据量</li>
+            <li>优化后查询效率提升约 30%</li>
+          </ul>
+        </article>
+        <article class="content-panel">
+          <h2>设计亮点</h2>
+          <ul class="check-list">
+            <li>采用 RESTful 风格设计接口，语义化 URL 与标准 HTTP 方法</li>
+            <li>基于 Token 实现无状态权限控制，支持移动端与 Web 端共用</li>
+            <li>模拟百级并发场景验证系统稳定性和响应性能</li>
+            <li>分层架构设计，模块间解耦，便于后续功能扩展</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section container cta-band">
+        <div>
+          <h2>对这个项目感兴趣？</h2>
+          <p>欢迎查看源码或联系我讨论技术细节。</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">联系我 <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 侯殿臣. All rights reserved.</span>
+        <span>用 ❤ 和代码创造价值</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
