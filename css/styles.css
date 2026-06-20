@@ -1807,14 +1807,23 @@ body.light .detail-hero-visual {
 
   .about-profile {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 14px;
   }
 
+  .about-profile img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
   .about-profile .btn {
+    flex-shrink: 0;
+    white-space: nowrap !important;
     width: auto;
-    white-space: nowrap;
+    min-width: 0;
   }
 
   .quick-nav {
@@ -1888,6 +1897,7 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
 
