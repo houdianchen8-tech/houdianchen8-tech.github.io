@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人站项目 | 侯殿臣</title>
+    <meta name="description" content="个人站项目详情，纯前端技术栈构建的个人品牌站点。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="project-detail-hero container">
+        <div class="detail-hero-copy">
+          <a class="back-link" href="projects.html">← 返回项目</a>
+          <span class="eyebrow">Personal Website</span>
+          <h1>个人站项目</h1>
+          <p>
+            基于纯前端技术栈构建的个人品牌站点，采用深色/浅色双主题切换与移动端优先的响应式设计。站点整合了项目展示、技术博客、AI 助手、工具箱、简历、联系页等六大功能模块，是个人技术品牌、项目成果与学术积淀的集中展示平台。部署于 GitHub Pages，实现持续集成与自动发布。
+          </p>
+          <div class="tags detail-tags">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>响应式设计</span>
+            <span>主题切换</span>
+            <span>GitHub Pages</span>
+            <span>CSS 变量</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
+            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">查看源码 <span>→</span></a>
+          </div>
+        </div>
+        <div class="detail-hero-visual">
+          <img src="assets/project-site.svg" alt="个人站项目界面" />
+          <div class="assistant-console">
+            <div class="console-dots"><span></span><span></span><span></span></div>
+            <p>// 站点架构</p>
+            <p>├── index.html 首页</p>
+            <p>├── projects.html 项目页</p>
+            <p>├── blog.html 博客页</p>
+            <p>├── about.html 关于我</p>
+            <p>└── toolbox.html 工具箱</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="detail-stat-grid">
+          <article>
+            <strong>6</strong>
+            <span>功能页面</span>
+          </article>
+          <article>
+            <strong>2</strong>
+            <span>主题模式</span>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <span>响应式适配</span>
+          </article>
+          <article>
+            <strong>CSS</strong>
+            <span>变量系统</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>项目背景</h2>
+          <p>
+            作为一名计算机专业学生，需要一处能够系统展示个人品牌、技术项目、学术成果与职业履历的数字空间。个人站正是为此而生——它不仅是项目与简历的展示窗口，更是技术成长历程的见证。
+          </p>
+          <p>
+            项目从零开始设计，不依赖任何前端框架，以纯 HTML、CSS 和 JavaScript 构建，力求在轻量的前提下实现美观、流畅、功能完整的用户体验。采用 GitHub Pages 部署，实现代码推送即发布的持续集成流程。
+          </p>
+        </article>
+        <aside class="side-panel project-summary">
+          <h3>项目摘要</h3>
+          <dl>
+            <div><dt>角色</dt><dd>独立开发 / 设计</dd></div>
+            <div><dt>周期</dt><dd>2026.04 – 至今</dd></div>
+            <div><dt>技术栈</dt><dd>纯前端 HTML/CSS/JS</dd></div>
+            <div><dt>状态</dt><dd>持续迭代中</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-head compact">
+          <div>
+            <h2>核心模块</h2>
+            <p>六大页面构建完整品牌体验</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="detail-panel">
+            <span class="tool-icon blue">H</span>
+            <h3>首页 Hero</h3>
+            <p>个人简介与技术定位展示，精选项目与荣誉奖项模块，快速浏览核心信息与社交链接入口。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon green">P</span>
+            <h3>项目展示</h3>
+            <p>项目列表页与详情页双层结构，含分类筛选、技术标签、指标数据等丰富信息展示。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon violet">B</span>
+            <h3>博客模块</h3>
+            <p>学术论文与技术文章展示区，图文混排布局，结构化展示技术积累与学术成果。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon orange">T</span>
+            <h3>工具箱</h3>
+            <p>实用在线工具聚合页，提供编码中常用的辅助功能，持续扩充中。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>技术实现</h2>
+          <ul class="check-list">
+            <li>基于 CSS 变量实现深色/浅色双主题系统，主题偏好通过 localStorage 持久化</li>
+            <li>移动端优先的响应式设计，三段式断点（560px / 820px / 940px）全面适配各尺寸设备</li>
+            <li>背板网格纹理与多层级径向渐变的独特视觉风格</li>
+            <li>无框架依赖，纯 HTML/CSS/JS 构建，加载速度快、可维护性强</li>
+            <li>SEO 友好的语义化 HTML 结构与 Meta 信息配置</li>
+          </ul>
+        </article>
+        <article class="content-panel">
+          <h2>设计亮点</h2>
+          <ul class="check-list">
+            <li>品牌化视觉语言：统一的配色系统、圆角体系与间距规范</li>
+            <li>毛玻璃导航栏 + 粘性定位，提升页面导航体验</li>
+            <li>项目详情页的终端风格代码展示区，增加技术感</li>
+            <li>AI 助手内嵌页面，作为独立功能入口展示 RAG 应用成果</li>
+            <li>主题切换按钮动画交互，提升界面细腻度</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section container cta-band">
+        <div>
+          <h2>欢迎浏览本站</h2>
+          <p>这就是你当前访问的站点，欢迎浏览各页面并留下宝贵意见。</p>
+        </div>
+        <a class="btn btn-primary" href="index.html">返回首页 <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>俄罗斯方块 | 侯殿臣</title>
+    <meta name="description" content="俄罗斯方块项目详情，原生 JavaScript + Canvas 游戏开发实践。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="blog.html" data-nav="blog">博客</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
+          <a href="contact.html" data-nav="contact">联系我</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="project-detail-hero container">
+        <div class="detail-hero-copy">
+          <a class="back-link" href="projects.html">← 返回项目</a>
+          <span class="eyebrow">Tetris Game</span>
+          <h1>俄罗斯方块</h1>
+          <p>
+            基于原生 JavaScript + Canvas 实现的经典俄罗斯方块游戏，完整实现了方块七种形态的旋转、下落、碰撞检测、行消除与计分系统。项目采用事件驱动架构，支持键盘与触屏双模式操控，并提供多档难度递进与本地排行榜功能，是前端游戏开发的一次完整实践。
+          </p>
+          <div class="tags detail-tags">
+            <span>JavaScript</span>
+            <span>Canvas</span>
+            <span>游戏开发</span>
+            <span>事件驱动</span>
+            <span>算法</span>
+            <span>HTML5</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
+            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">查看源码 <span>→</span></a>
+          </div>
+        </div>
+        <div class="detail-hero-visual">
+          <img src="assets/project-tetris.svg" alt="俄罗斯方块游戏界面" />
+          <div class="assistant-console">
+            <div class="console-dots"><span></span><span></span><span></span></div>
+            <p>// 游戏核心循环</p>
+            <p>requestAnimationFrame</p>
+            <p>├── 自动下落 tick</p>
+            <p>├── 碰撞检测</p>
+            <p>├── 行消除判定</p>
+            <p>└── 渲染更新</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="detail-stat-grid">
+          <article>
+            <strong>7</strong>
+            <span>方块形态种类</span>
+          </article>
+          <article>
+            <strong>2</strong>
+            <span>操控模式</span>
+          </article>
+          <article>
+            <strong>10+</strong>
+            <span>难度等级</span>
+          </article>
+          <article>
+            <strong>Canvas</strong>
+            <span>纯前端渲染</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>项目背景</h2>
+          <p>
+            俄罗斯方块（Tetris）作为电子游戏史上最具影响力的经典游戏之一，其核心玩法涉及空间思维、实时决策与算法逻辑。本项目以"用前端技术还原经典"为目标，从零开始实现一套完整的游戏引擎。
+          </p>
+          <p>
+            项目旨在通过游戏开发实践深入理解 JavaScript 事件循环、Canvas 渲染机制、碰撞检测算法以及游戏循环设计模式，为后续更复杂的游戏或交互应用开发积累经验。
+          </p>
+        </article>
+        <aside class="side-panel project-summary">
+          <h3>项目摘要</h3>
+          <dl>
+            <div><dt>角色</dt><dd>独立开发</dd></div>
+            <div><dt>周期</dt><dd>2026.03 – 2026.04</dd></div>
+            <div><dt>技术栈</dt><dd>原生 JavaScript + Canvas</dd></div>
+            <div><dt>状态</dt><dd>已完成</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-head compact">
+          <div>
+            <h2>核心功能</h2>
+            <p>完整体验经典玩法</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="detail-panel">
+            <span class="tool-icon blue">S</span>
+            <h3>方块系统</h3>
+            <p>实现七种标准方块（I/O/T/S/Z/J/L）的生成、旋转与预览，旋转采用 Super Rotation System 算法。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon green">C</span>
+            <h3>碰撞检测</h3>
+            <p>基于网格矩阵的实时碰撞检测，支持边界碰撞、方块间碰撞以及旋转合法性校验。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon violet">R</span>
+            <h3>行消除系统</h3>
+            <p>支持单行、双行、三行和四行消除判定，消除动画过渡自然，整体计分随消除行数呈指数增长。</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon orange">L</span>
+            <h3>难度与排行榜</h3>
+            <p>随消除行数自动递增下落速度，提供本地 localStorage 持久化排行榜，记录最佳成绩。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container detail-layout">
+        <article class="content-panel">
+          <h2>技术实现</h2>
+          <p>
+            游戏主循环基于 requestAnimationFrame 实现，保证不同刷新率设备上的一致体验。方块使用二维矩阵表示旋转状态，通过预计算旋转表避免实时计算开销。碰撞检测采用"试移再判"策略：先尝试移动/旋转，再验证新位置是否合法。
+          </p>
+          <ul class="check-list">
+            <li>使用 Canvas 2D API 完成全部游戏画面渲染，无需任何第三方库</li>
+            <li>键盘 WASD/方向键操控 + 触屏手势滑动的双模式输入系统</li>
+            <li>"幽灵方块"预览功能，显示当前方块预计落点位置</li>
+            <li>下一个方块预览区域，帮助玩家提前规划放置策略</li>
+            <li>暂停/继续、重新开始等游戏状态管理</li>
+          </ul>
+        </article>
+        <article class="content-panel">
+          <h2>设计亮点</h2>
+          <ul class="check-list">
+            <li>模块化架构设计：将渲染、逻辑、输入、音效拆分为独立模块</li>
+            <li>分数倍增机制：连续消除行数越多，单次得分指数增长</li>
+            <li>响应式 Canvas 布局，适配移动端与桌面端不同屏幕尺寸</li>
+            <li>触屏手势识别：支持滑动方向控制与点击旋转</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section container cta-band">
+        <div>
+          <h2>想试玩这个游戏？</h2>
+          <p>欢迎查看源码或联系我讨论技术细节。</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">联系我 <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
