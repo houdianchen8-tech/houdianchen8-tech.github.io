@@ -1805,7 +1805,18 @@ body.light .detail-hero-visual {
     grid-column: auto;
   }
 
-  .about-profile,
+  .about-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .about-profile .btn {
+    width: auto;
+    white-space: nowrap;
+  }
+
   .quick-nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -1877,6 +1888,7 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
 

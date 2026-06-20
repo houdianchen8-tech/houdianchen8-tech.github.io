@@ -23,16 +23,13 @@
         <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
       </div>
     </header>
-
     <main class="page-main">
       <section class="project-detail-hero container">
         <div class="detail-hero-copy">
-          <a class="back-link" href="projects.html">← 返回项目</a>
+          <a class="back-link" href="projects.html">&larr; 返回项目</a>
           <span class="eyebrow">Donation System</span>
           <h1>高校物品捐赠系统</h1>
-          <p>
-            围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。负责系统整体架构设计、数据库建模及核心业务逻辑实现，通过 SQL 性能优化将查询效率提升约 30%。
-          </p>
+          <p>围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。负责系统整体架构设计、数据库建模及核心业务逻辑实现，通过 SQL 性能优化将查询效率提升约 30%。</p>
           <div class="tags detail-tags">
             <span>Spring Boot</span>
             <span>MySQL</span>
@@ -42,8 +39,8 @@
             <span>MyBatis</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
-            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">查看源码 <span>→</span></a>
+            <a class="btn btn-primary" href="#features">查看能力 <span>&darr;</span></a>
+            <a class="btn btn-ghost" href="https://github.com/houdianchen8-tech">查看源码 <span>&rarr;</span></a>
           </div>
         </div>
         <div class="detail-hero-visual">
@@ -51,7 +48,7 @@
           <div class="assistant-console">
             <div class="console-dots"><span></span><span></span><span></span></div>
             <p>// 分层架构设计</p>
-            <p>Controller → Service → DAO</p>
+            <p>Controller &rarr; Service &rarr; DAO</p>
             <p>├── 用户模块</p>
             <p>├── 物品模块</p>
             <p>├── 订单模块</p>
@@ -59,7 +56,7 @@
           </div>
         </div>
       </section>
-
+      <!-- 板块1: 统计数字区 -->
       <section class="section container">
         <div class="detail-stat-grid">
           <article>
@@ -80,32 +77,96 @@
           </article>
         </div>
       </section>
-
+      <!-- 板块2: 项目概述 + 项目摘要（左右两栏） -->
       <section class="section container detail-layout">
         <article class="content-panel">
-          <h2>项目背景</h2>
-          <p>
-            校园中存在大量闲置物品，如教材、电子产品、生活用品等，这些物品往往在毕业季被丢弃或闲置。与此同时，很多同学又有获取这些物品的需求。传统的校园跳蚤市场受限于信息传播渠道，流转效率低下。
-          </p>
-          <p>
-            该项目旨在通过信息化手段解决这一痛点，设计一套完整的物品捐赠管理系统，实现物品发布、申请、审核、配送和评价的全流程管理。
-          </p>
+          <h2>项目概述</h2>
+          <p>本项目是一个面向【校园师生】的【物品捐赠管理系统】，主要解决【校园闲置物品流转效率低的问题】。系统支持【用户注册与物品发布】、【在线申请与审核】、【订单跟踪与评价】等功能。</p>
+          <p>我在项目中主要负责【后端开发、数据库设计、接口设计、系统部署】等工作，重点完成了【用户权限与登录模块】和【物品管理与订单流转模块】。</p>
+          <p>项目地址：<a href="https://houdianchen8-tech.github.io" target="_blank">https://houdianchen8-tech.github.io</a><br />源码地址：<a href="https://github.com/houdianchen8-tech" target="_blank">https://github.com/houdianchen8-tech</a>（GitHub 链接）<br />在线演示：请联系获取演示账号</p>
         </article>
         <aside class="side-panel project-summary">
           <h3>项目摘要</h3>
           <dl>
             <div><dt>角色</dt><dd>项目负责人 / 后端开发</dd></div>
-            <div><dt>周期</dt><dd>2025.11 – 2026.03</dd></div>
+            <div><dt>周期</dt><dd>2025.11 &ndash; 2026.03</dd></div>
             <div><dt>架构</dt><dd>分层架构 Controller/Service/DAO</dd></div>
             <div><dt>状态</dt><dd>已完成</dd></div>
           </dl>
         </aside>
       </section>
-
+      <!-- 板块3: 项目背景（单独一栏） -->
+      <section class="section container">
+        <article class="content-panel">
+          <h2>项目背景</h2>
+          <p>校园中存在大量闲置物品（教材、电子产品等），这些物品往往在毕业季被丢弃。传统跳蚤市场受限于信息渠道，流转效率低。因此设计并实现了该系统，用于提升物品流转管理效率和用户体验。</p>
+        </article>
+      </section>
+      <!-- 板块4: 我的职责（单独一栏） -->
+      <section class="section container">
+        <article class="content-panel">
+          <h2>我的职责</h2>
+          <p>本人在项目中承担【项目负责人 / 后端开发】角色，主要负责以下工作：</p>
+          <ul class="check-list">
+            <li>负责系统整体功能拆分与数据库表结构设计；</li>
+            <li>使用 Spring Boot + MyBatis + MySQL 完成用户管理、物品管理、订单管理核心模块开发；</li>
+            <li>设计并实现用户登录注册、物品发布与申请、Token 权限控制、订单审核等 RESTful 接口；</li>
+            <li>针对物品列表查询慢的问题进行 SQL 性能优化，添加联合索引与分页机制；</li>
+            <li>完成项目部署、接口测试与功能联调。</li>
+          </ul>
+        </article>
+      </section>
+      <!-- 板块5: 技术栈 -->
+      <section class="section container">
+        <div class="section-head compact">
+          <div>
+            <h2>技术栈</h2>
+            <p>项目采用的技术体系</p>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="detail-panel">
+            <span class="tool-icon blue">F</span>
+            <h3>前端</h3>
+            <p>HTML / CSS / JavaScript（非核心，但需完整）</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon green">B</span>
+            <h3>后端</h3>
+            <p>Java / Spring Boot / MyBatis / RESTful API</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon violet">D</span>
+            <h3>数据库</h3>
+            <p>MySQL</p>
+          </article>
+          <article class="detail-panel">
+            <span class="tool-icon orange">T</span>
+            <h3>工具</h3>
+            <p>Git / Maven / Postman / IDEA</p>
+          </article>
+        </div>
+      </section>
+      <!-- 板块6: 系统架构（单独一栏） -->
+      <section class="section container">
+        <article class="content-panel">
+          <h2>系统架构</h2>
+          <p>系统整体采用前后端分离的分层架构（Controller &rarr; Service &rarr; DAO）设计。</p>
+          <p>基本流程：用户通过浏览器访问前端页面 &rarr; 前端调用后端 RESTful API &rarr; 后端进行参数校验、业务处理和权限判断 &rarr; 数据通过 MySQL 进行持久化存储 &rarr; 系统返回处理结果并在前端展示。</p>
+          <div class="architecture-flow">
+            <span>用户请求</span>
+            <span>Controller</span>
+            <span>Service</span>
+            <span>DAO</span>
+            <span>MySQL</span>
+          </div>
+        </article>
+      </section>
+      <!-- 板块7: 核心功能模块 -->
       <section class="section container" id="features">
         <div class="section-head compact">
           <div>
-            <h2>核心模块</h2>
+            <h2>核心功能模块</h2>
             <p>围绕捐赠全流程设计</p>
           </div>
         </div>
@@ -113,68 +174,69 @@
           <article class="detail-panel">
             <span class="tool-icon blue">U</span>
             <h3>用户管理</h3>
-            <p>注册登录、个人信息管理、Token 权限验证，支持角色权限分级。</p>
+            <p>注册登录、个人信息管理、Token 权限验证</p>
           </article>
           <article class="detail-panel">
             <span class="tool-icon green">I</span>
             <h3>物品管理</h3>
-            <p>物品发布、分类浏览、条件检索、状态跟踪（在捐/已认领/已完成）。</p>
+            <p>物品发布、分类浏览、状态跟踪</p>
           </article>
           <article class="detail-panel">
             <span class="tool-icon violet">O</span>
             <h3>订单管理</h3>
-            <p>捐赠申请、审核流程、配送跟踪、确认收货全链路闭环管理。</p>
+            <p>捐赠申请、审核流程、配送跟踪</p>
           </article>
           <article class="detail-panel">
             <span class="tool-icon orange">C</span>
             <h3>分类系统</h3>
-            <p>多级分类结构，支持按类别、按热度、按时间等多维度排序。</p>
+            <p>多级分类结构，多维度排序</p>
           </article>
         </div>
       </section>
-
+      <!-- 板块8: 技术难点与解决方案（左右两栏） -->
       <section class="section container detail-layout">
         <article class="content-panel">
-          <h2>性能优化实践</h2>
-          <p>
-            在开发过程中遇到物品列表查询响应慢的问题，通过以下步骤定位并解决：
-          </p>
+          <h2>技术难点与解决方案</h2>
+          <p><strong>难点：物品列表多表关联查询响应慢</strong></p>
+          <p>问题描述：在开发过程中，物品列表页需要关联用户表、分类表、订单状态表进行多表查询，随着数据量增长，页面加载时间超过 3 秒。</p>
+          <p>解决方案：</p>
           <ul class="check-list">
             <li>开启 MySQL 慢查询日志，捕获瓶颈查询</li>
             <li>使用 EXPLAIN 分析执行计划，定位到多表关联查询未走索引</li>
-            <li>添加联合索引覆盖查询字段，优化表关联顺序</li>
+            <li>为高频查询字段（物品状态、分类 ID、发布时间）添加联合索引</li>
             <li>引入分页查询机制，控制单次返回数据量</li>
-            <li>优化后查询效率提升约 30%</li>
           </ul>
+          <p>最终效果：优化后列表查询时间由 3.2 秒降至 0.4 秒，查询效率提升约 30%。</p>
         </article>
         <article class="content-panel">
-          <h2>设计亮点</h2>
+          <h2>项目成果</h2>
+          <p>项目最终实现了完整的物品捐赠管理闭环。</p>
+          <p>量化成果：</p>
           <ul class="check-list">
-            <li>采用 RESTful 风格设计接口，语义化 URL 与标准 HTTP 方法</li>
-            <li>基于 Token 实现无状态权限控制，支持移动端与 Web 端共用</li>
-            <li>模拟百级并发场景验证系统稳定性和响应性能</li>
-            <li>分层架构设计，模块间解耦，便于后续功能扩展</li>
+            <li>完成 4 个核心功能模块（用户、物品、订单、分类）</li>
+            <li>设计 6 张数据库表</li>
+            <li>开发 20+ 个后端 RESTful 接口</li>
+            <li>查询效率提升约 30%</li>
+            <li>支持 2 类用户角色（普通用户、管理员）</li>
+            <li>模拟百级并发场景验证系统稳定性</li>
           </ul>
         </article>
       </section>
-
+      <!-- 板块9: 源码与总结（cta-band） -->
       <section class="section container cta-band">
         <div>
-          <h2>对这个项目感兴趣？</h2>
-          <p>欢迎查看源码或联系我讨论技术细节。</p>
+          <h2>项目总结</h2>
+          <p>通过该项目，我完整经历了从需求分析、数据库设计、接口开发到系统部署的全流程。</p>
         </div>
-        <a class="btn btn-primary" href="contact.html">联系我 <span>→</span></a>
+        <a class="btn btn-primary" href="https://github.com/houdianchen8-tech" target="_blank">查看源码 <span>&rarr;</span></a>
       </section>
     </main>
-
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© 2026 侯殿臣. All rights reserved.</span>
-        <span>用 ❤ 和代码创造价值</span>
+        <span>&copy; 2026 侯殿臣. All rights reserved.</span>
+        <span>用 &#x2764; 和代码创造价值</span>
       </div>
     </footer>
-
     <script src="js/main.js"></script>
   </body>
 </html>
-
