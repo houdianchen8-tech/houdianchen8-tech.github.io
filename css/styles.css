@@ -1776,8 +1776,9 @@ body.light .detail-hero-visual {
   }
 
   .cta-band {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 20px;
     gap: 14px;
   }
@@ -1897,6 +1898,7 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
 
