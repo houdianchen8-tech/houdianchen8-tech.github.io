@@ -1234,7 +1234,36 @@ select {
   align-items: start;
 }
 
-.contact-list {
+.wechat-qr {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.wechat-qr h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.wechat-qr img {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  display: inline-block;
+  background: #fff;
+}
+
+.wechat-qr p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+body.light .wechat-qr {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}.contact-list {
   margin-top: 18px;
 }
 
@@ -1842,5 +1871,6 @@ body.light .detail-hero-visual {
     font-size: 22px;
   }
 }
+
 
 
