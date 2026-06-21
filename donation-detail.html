@@ -1,35 +1,38 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>高校物品捐赠系统 | 侯殿臣</title>
     <meta name="description" content="高校物品捐赠系统项目详情，Spring Boot + MySQL 实现，分层架构设计，性能优化实践。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="projects">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="project-detail-hero container">
         <div class="detail-hero-copy">
           <a class="back-link" href="projects.html">&larr; 返回项目</a>
           <span class="eyebrow">Donation System</span>
           <h1>高校物品捐赠系统</h1>
-          <p>围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。负责系统整体架构设计、数据库建模及核心业务逻辑实现，通过 SQL 性能优化将查询效率提升约 30%。</p>
+          <p>围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。负责系统整体架构设计、数据库建模及核心业务逻辑实现，通过 SQL 性能优化将核心列表查询由 3.2 秒降至 0.4 秒。</p>
           <div class="tags detail-tags">
             <span>Spring Boot</span>
             <span>MySQL</span>
@@ -44,7 +47,7 @@
           </div>
         </div>
         <div class="detail-hero-visual">
-          <img src="assets/project-commerce.png" alt="高校物品捐赠系统界面" />
+          <img src="assets/project-commerce.webp" alt="高校物品捐赠系统界面" width="1920" height="910" decoding="async" fetchpriority="high" />
           <div class="assistant-console">
             <div class="console-dots"><span></span><span></span><span></span></div>
             <p>// 分层架构设计</p>
@@ -58,52 +61,69 @@
       </section>
       <!-- 板块1: 统计数字区 -->
       <section class="section container">
-        <div class="detail-stat-grid">
-          <article>
-            <strong>30%</strong>
-            <span>查询效率提升</span>
+        <header class="section-head compact">
+          <div>
+            <h2>项目数据概览</h2>
+            <p>把系统规模、业务复杂度和优化结果放在首屏可读位置</p>
+          </div>
+        </header>
+        <div class="donation-metric-board">
+          <article class="donation-metric">
+            <strong>3.2s → 0.4s</strong>
+            <p>核心列表查询耗时</p>
+            <span>联合索引 + 分页查询优化</span>
           </article>
-          <article>
+          <article class="donation-metric">
             <strong>13</strong>
-            <span>数据库表</span>
+            <p>数据库表</p>
+            <span>覆盖用户、物品、交易、通知等模块</span>
           </article>
-          <article>
-            <strong>6</strong>
-            <span>物品状态流转</span>
+          <article class="donation-metric">
+            <strong>3</strong>
+            <p>用户角色</p>
+            <span>用户、管理员、志愿者权限隔离</span>
           </article>
-          <article>
-            <strong>WebSocket</strong>
-            <span>实时通知推送</span>
+          <article class="donation-metric">
+            <strong>7</strong>
+            <p>物品主状态</p>
+            <span>从发布、审核到交付互评全流程追踪</span>
           </article>
         </div>
       </section>
       <!-- 板块2: 项目概述 + 项目摘要（左右两栏） -->
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>项目概述</h2>
-          <p>本项目是一个面向【校园师生】的【物品捐赠管理系统】，主要解决【校园闲置物品流转效率低的问题】。系统采用【前后端分离 B/S 架构】，支持用户注册（管理员审核）、物品发布与 6 种状态流转、捐赠申请与交易交付、互评信用等完整业务流程。</p>
-          <p>我在项目中负责【系统架构设计、数据库建模（13 张表）、后端核心业务逻辑实现及性能优化】等工作，重点完成了【用户权限与鉴权模块】、【物品管理与状态流转模块】以及【基于协同过滤的推荐算法】。</p>
-          <p>源码地址：<a href="https://github.com/houdianchen8-tech" target="_blank">https://github.com/houdianchen8-tech</a>（GitHub 链接）<br />在线演示：请联系获取演示账号</p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 项目概述
+
+本项目面向校园师生，解决闲置物品流转效率低、信息不集中和交易闭环弱的问题。系统采用前后端分离的 Web 架构，支持用户注册审核、物品发布审核、捐赠申请、交易交付、互评信用和通知反馈等流程。
+
+我主要负责系统架构设计、13 张数据库表建模、后端核心业务逻辑实现和性能优化，重点完成用户权限与鉴权、物品管理与状态流转、推荐算法和列表查询优化等模块。
+
+源码地址：[https://github.com/houdianchen8-tech](https://github.com/houdianchen8-tech)（GitHub 链接）
+
+在线演示：请联系获取演示账号
+          </template>
         </article>
         <aside class="side-panel project-summary">
           <h3>项目摘要</h3>
           <dl>
-            <div><dt>角色</dt><dd>项目负责人 / 后端开发</dd></div>
+            <div><dt>角色</dt><dd>负责人 / 后端开发</dd></div>
             <div><dt>周期</dt><dd>2025.11 &ndash; 2026.03</dd></div>
-            <div><dt>架构</dt><dd>前后端分离 B/S 架构</dd></div>
-            <div><dt>角色数</dt><dd>3 种（user / admin / volunteer）</dd></div>
+            <div><dt>架构</dt><dd>前后端分离</dd></div>
+            <div><dt>角色数</dt><dd>用户 / 管理员 / 志愿者</dd></div>
             <div><dt>状态</dt><dd>已完成</dd></div>
           </dl>
         </aside>
       </section>
       <!-- 板块3: 技术栈 -->
       <section class="section container">
-        <div class="section-head compact">
+        <header class="section-head compact">
           <div>
             <h2>技术栈</h2>
             <p>后端 &middot; 前端 &middot; 数据库 &middot; 工具</p>
           </div>
-        </div>
+        </header>
         <div class="feature-grid">
           <article class="detail-panel">
             <span class="tool-icon blue">B</span>
@@ -147,7 +167,7 @@
         <article class="content-panel">
           <h2>数据库设计</h2>
           <p>系统共设计 13 张数据库表，覆盖用户管理、物品流转、交易交付、通知反馈等全业务流程。存储引擎统一选用 InnoDB，支持事务与行级锁。</p>
-          <div class="feature-grid" style="margin-top:1.5rem;">
+          <div class="feature-grid stacked-block">
             <article class="detail-panel">
               <span class="tool-icon blue">U</span>
               <h3>用户相关</h3>
@@ -173,12 +193,12 @@
       </section>
       <!-- 板块6: 核心功能模块 -->
       <section class="section container" id="features">
-        <div class="section-head compact">
+        <header class="section-head compact">
           <div>
             <h2>核心功能模块</h2>
             <p>覆盖捐赠全流程的 10 大模块</p>
           </div>
-        </div>
+        </header>
         <div class="feature-grid">
           <article class="detail-panel">
             <span class="tool-icon blue">U</span>
@@ -234,92 +254,99 @@
       </section>
       <!-- 板块7: 核心业务流程 -->
       <section class="section container">
-        <article class="content-panel">
-          <h2>核心业务流程</h2>
-          <p>物品从发布到完成捐赠经历完整的生命周期管理：</p>
-          <div class="phase-list">
-            <div class="phase-item">
-              <span class="phase-marker">1</span>
-              <div>
-                <strong>物品发布</strong>
-                <p>用户上传物品信息（多图）&rarr; 系统自动进入待审核状态</p>
-              </div>
-            </div>
-            <div class="phase-item">
-              <span class="phase-marker">2</span>
-              <div>
-                <strong>管理员审核</strong>
-                <p>审核通过 &rarr; 展示中；未通过 &rarr; 退回并说明原因</p>
-              </div>
-            </div>
-            <div class="phase-item">
-              <span class="phase-marker">3</span>
-              <div>
-                <strong>用户申请</strong>
-                <p>浏览物品 &rarr; 提交捐赠请求 &rarr; 捐赠者从请求列表选择受赠方 &rarr; 状态变更为已匹配</p>
-              </div>
-            </div>
-            <div class="phase-item">
-              <span class="phase-marker">4</span>
-              <div>
-                <strong>交易交付</strong>
-                <p>选择交付方式（学校收纳处/自行安排）&rarr; 状态：待捐出 &rarr; 已捐出 &rarr; 已收到 &rarr; 已完成</p>
-              </div>
-            </div>
-            <div class="phase-item">
-              <span class="phase-marker">5</span>
-              <div>
-                <strong>互评信用</strong>
-                <p>交易双方互相评分（1&ndash;10 分）&rarr; 信用资料卡更新 &rarr; Redis 缓存</p>
-              </div>
-            </div>
+        <header class="section-head compact">
+          <div>
+            <h2>捐赠状态流转</h2>
+            <p>从物品发布到交易闭环，每一步都有明确状态和责任方</p>
           </div>
-        </article>
+        </header>
+        <div class="status-flow" aria-label="高校物品捐赠系统状态流转">
+          <article class="status-step" data-index="1">
+            <h3>待审核</h3>
+            <p>用户发布物品，管理员校验信息完整性。</p>
+          </article>
+          <article class="status-step" data-index="2">
+            <h3>展示中</h3>
+            <p>审核通过后进入列表，支持搜索、分类和推荐。</p>
+          </article>
+          <article class="status-step" data-index="3">
+            <h3>已申请</h3>
+            <p>受赠方提交申请，捐赠方查看请求列表。</p>
+          </article>
+          <article class="status-step" data-index="4">
+            <h3>已匹配</h3>
+            <p>捐赠方选择受赠方，系统生成交易记录。</p>
+          </article>
+          <article class="status-step" data-index="5">
+            <h3>待交付</h3>
+            <p>双方选择学校收纳处或线下自取方式。</p>
+          </article>
+          <article class="status-step" data-index="6">
+            <h3>已完成</h3>
+            <p>确认收货后完成交易，通知双方处理结果。</p>
+          </article>
+          <article class="status-step" data-index="7">
+            <h3>互评信用</h3>
+            <p>交易双方评分，更新信用资料并缓存热点数据。</p>
+          </article>
+        </div>
       </section>
       <!-- 板块8: 技术难点与解决方案 + 优化成果（左右两栏） -->
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>技术难点与解决方案</h2>
-          <p><strong>难点：物品列表多表关联查询响应慢</strong></p>
-          <p>问题描述：在开发过程中，物品列表页需要关联 sys_user、donation_item、category、donation_request 等多表进行查询，随着数据量增长，页面加载时间超过 3 秒。</p>
-          <p>解决方案：</p>
-          <ul class="check-list">
-            <li>开启 MySQL 慢查询日志，捕获瓶颈查询</li>
-            <li>使用 EXPLAIN 分析执行计划，定位到多表关联查询未走索引</li>
-            <li>为高频查询字段（物品状态、分类 ID、发布时间）添加联合索引</li>
-            <li>引入分页查询机制，控制单次返回数据量</li>
-            <li>对推荐结果等热点数据使用 Redis 缓存，减少 MySQL 查询压力</li>
-          </ul>
-          <p>最终效果：优化后列表查询时间由 3.2 秒降至 0.4 秒，查询效率提升约 30%，Redis 缓存大幅减少 MySQL 压力。</p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 技术难点与解决方案
+
+**难点：物品列表多表关联查询响应慢**
+
+问题描述：在开发过程中，物品列表页需要关联 `sys_user`、`donation_item`、`category`、`donation_request` 等多表进行查询，随着数据量增长，页面加载时间超过 3 秒。
+
+解决方案：
+
+- 开启 MySQL 慢查询日志，捕获瓶颈查询
+- 使用 EXPLAIN 分析执行计划，定位到多表关联查询未走索引
+- 为高频查询字段（物品状态、分类 ID、发布时间）添加联合索引
+- 引入分页查询机制，控制单次返回数据量
+- 对推荐结果等热点数据使用 Redis 缓存，减少 MySQL 查询压力
+
+最终效果：优化后列表查询时间由 3.2 秒降至 0.4 秒，响应时间降低约 **87.5%**，Redis 缓存大幅减少 MySQL 压力。
+          </template>
         </article>
-        <article class="content-panel">
-          <h2>优化成果</h2>
-          <p>项目在完成完整功能的基础上，进行了系统性的性能优化。</p>
-          <p>量化成果：</p>
-          <ul class="check-list">
-            <li>联合索引 + 分页查询 &rarr; 列表查询 3.2s &rarr; 0.4s（提升约 30%）</li>
-            <li>Redis 缓存热点数据 &rarr; 大幅减少 MySQL 压力</li>
-            <li>WebSocket 实时通知 &rarr; 通知推送即时性提升</li>
-            <li>设计 13 张数据库表 &rarr; 覆盖全业务流程</li>
-            <li>3 种用户角色 &rarr; 权限分级隔离管控</li>
-            <li>4 种交易状态 &rarr; 完整追踪捐赠交付链路</li>
-          </ul>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 优化成果
+
+项目在完成完整功能的基础上，进行了系统性的性能优化。
+
+量化成果：
+
+- 联合索引 + 分页查询 -> 列表查询 3.2s -> 0.4s（响应时间降低约 **87.5%**）
+- Redis 缓存热点数据 -> 大幅减少 MySQL 压力
+- WebSocket 实时通知 -> 通知推送即时性提升
+- 设计 13 张数据库表 -> 覆盖全业务流程
+- 3 种用户角色 -> 权限分级隔离管控
+- 4 种交易状态 -> 完整追踪捐赠交付链路
+          </template>
         </article>
       </section>
       <!-- 板块9: 源码与总结（cta-band） -->
       <section class="section container cta-band">
-        <div>
-          <h2>项目总结</h2>
-          <p>通过该项目，我完整经历了从需求分析、数据库设计（13 张表）、接口开发到系统部署的全流程。重点攻克了多表关联查询性能瓶颈、基于标签的协同过滤推荐算法以及 WebSocket 实时通知等关键技术难点，为校园闲置物品流转提供了完整的技术解决方案。</p>
+        <div class="markdown-content" data-markdown>
+          <template type="text/markdown">
+## 项目总结
+
+通过该项目，我完整经历了从需求分析、数据库设计（13 张表）、接口开发到系统部署的全流程。重点攻克了多表关联查询性能瓶颈、基于标签的协同过滤推荐算法以及 WebSocket 实时通知等关键技术难点，为校园闲置物品流转提供了完整的技术解决方案。
+          </template>
         </div>
         <a class="btn btn-primary" href="https://github.com/houdianchen8-tech" target="_blank">查看源码 <span>&rarr;</span></a>
       </section>
+    </main>
     <footer class="site-footer">
       <div class="container footer-inner">
         <span>&copy; 2026 侯殿臣. All rights reserved.</span>
         <span>用 &#x2764; 和代码创造价值</span>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

@@ -1,66 +1,69 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>项目 | 侯殿臣</title>
     <meta name="description" content="侯殿臣的项目合集：高校物品捐赠系统、智慧校园 AI 助手、向晋特种行小程序、个人站、停车场管理系统、俄罗斯方块。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="projects">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="page-hero container">
         <span class="eyebrow">Projects</span>
         <h1>从真实问题出发，用代码构建价值</h1>
-        <p>这里收录我在大学期间完成的核心项目，涵盖后端系统、AI 应用、小程序、前端全栈和游戏开发。每个项目都从真实需求出发，注重系统稳定性、性能优化与可扩展性。</p>
+        <p>这里收录我在大学期间完成的核心项目，涵盖后端系统、AI 应用、小程序、前端页面和游戏开发。每个项目都从真实需求出发，注重系统稳定性、性能优化与可扩展性。</p>
       </section>
 
       <section class="section container">
-        <div class="filter-row" aria-label="项目分类">
+        <nav class="filter-row" aria-label="项目分类">
           <a class="chip active" href="#featured">全部</a>
           <a class="chip" href="#donation">后端系统</a>
           <a class="chip" href="#ai-assistant">AI 应用</a>
           <a class="chip" href="#xiangjin">小程序</a>
-          <a class="chip" href="#personal-site">前端/全栈</a>
+          <a class="chip" href="#personal-site">前端页面</a>
           <a class="chip" href="#tetris">游戏开发</a>
-        </div>
+        </nav>
 
         <div class="project-grid project-grid-expanded" id="featured">
           <!-- 高校物品捐赠系统 -->
           <article class="project-card feature-card" id="donation">
-            <img src="assets/project-commerce.png?v=1781969012" alt="高校物品捐赠系统界面" />
+            <img src="assets/project-commerce.webp?v=1781969012" alt="高校物品捐赠系统界面" width="1920" height="910" decoding="async" loading="lazy" />
             <div class="card-body">
               <h3>高校物品捐赠系统 <span class="badge hot">核心</span></h3>
-              <p>围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。采用分层架构、RESTful 接口设计与 Token 权限控制，通过联合索引与分页查询将列表查询效率提升约 30%。</p>
+              <p>围绕校园闲置物品流转效率低的问题，基于 Spring Boot + MySQL 设计并实现了一套完整的物品捐赠管理系统。采用分层架构、RESTful 接口设计与 Token 权限控制，通过联合索引与分页查询将核心列表查询由 3.2 秒降至 0.4 秒。</p>
               <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>RESTful</span><span>JWT</span><span>分层架构</span></div>
             </div>
-            <div class="metric-line"><span>查询效率提升 30%</span><span>百级并发验证</span><span>项目负责人</span></div>
+            <div class="metric-line"><span>3.2s → 0.4s</span><span>13 张数据表</span><span>项目负责人</span></div>
             <div class="card-actions"><a class="text-link" href="donation-detail.html">查看详情 →</a></div>
           </article>
 
           <!-- 智慧校园 AI 助手 -->
           <article class="project-card feature-card" id="ai-assistant">
-            <img src="assets/project-ai.jpg?v=1781969012" alt="AI 智能助手项目界面" />
+            <img src="assets/project-ai.webp?v=1781969012" alt="AI 智能助手项目界面" width="1920" height="1020" decoding="async" loading="lazy" />
             <div class="card-body">
               <h3>智慧校园 AI 助手 <span class="badge hot">实习</span></h3>
               <p>基于 RAG 架构的校园 AI 问答系统，实现对课程信息、校园公告、办事流程等多源数据的语义检索与智能应答。通过缓存策略与异步请求优化降低接口延迟约 35%，借助 Cursor 辅助编码将模块开发周期缩短约 40%。</p>
-              <div class="tags"><span>RAG</span><span>Redis/Redis</span><span>LLM</span><span>Prompt Engineering</span><span>Java</span></div>
+              <div class="tags"><span>RAG</span><span>Redis</span><span>LLM</span><span>Prompt Engineering</span><span>Java</span></div>
             </div>
             <div class="metric-line"><span>延迟降低 35%</span><span>开发周期缩短 40%</span><span>传智播客实习</span></div>
             <div class="card-actions"><a class="text-link" href="ai-assistant.html">查看详情 →</a></div>
@@ -79,10 +82,10 @@
 
           <!-- 个人站项目 -->
           <article class="project-card feature-card" id="personal-site">
-            <img src="assets/project-site.svg?v=1781969012" alt="个人站项目界面" />
+            <img src="assets/project-site.svg?v=1781969012" alt="个人站项目界面" width="400" height="300" decoding="async" loading="lazy" />
             <div class="card-body">
-              <h3>个人站项目 <span class="badge hot">全栈</span></h3>
-              <p>基于纯前端技术栈构建的个人品牌站点，采用响应式设计、深色/浅色双主题切换、SPA 风格页面路由。整合项目展示、技术博客、AI 助手、工具箱等模块，承载个人技术成长历程与成果沉淀。</p>
+              <h3>个人站项目 <span class="badge hot">前端</span></h3>
+              <p>基于纯前端技术栈构建的个人品牌站点，采用响应式设计、深色/浅色双主题切换和多页面静态站结构。整合项目展示、技术博客、AI 助手、工具箱等模块，承载个人技术成长历程与成果沉淀。</p>
               <div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>响应式设计</span><span>主题切换</span><span>GitHub Pages</span></div>
             </div>
             <div class="metric-line"><span>6 个功能页面</span><span>双主题支持</span><span>全站响应式</span></div>
@@ -91,7 +94,7 @@
 
           <!-- 停车场管理系统 -->
           <article class="project-card feature-card" id="parking">
-            <img src="assets/project-parking.svg?v=1781969012" alt="停车场管理系统界面" />
+            <img src="assets/project-parking.svg?v=1781969012" alt="停车场管理系统界面" width="400" height="300" decoding="async" loading="lazy" />
             <div class="card-body">
               <h3>停车场管理系统 <span class="badge hot">后端</span></h3>
               <p>基于 Spring Boot + MySQL 实现的停车场智能管理平台，涵盖车位管理、车辆出入登记、收费计费、会员管理等功能模块。采用 RESTful 接口设计，通过算法优化车位分配与费用结算流程。</p>
@@ -103,7 +106,7 @@
 
           <!-- 俄罗斯方块 -->
           <article class="project-card feature-card" id="tetris">
-            <img src="assets/project-tetris.svg?v=1781969012" alt="俄罗斯方块游戏界面" />
+            <img src="assets/project-tetris.svg?v=1781969012" alt="俄罗斯方块游戏界面" width="400" height="300" decoding="async" loading="lazy" />
             <div class="card-body">
               <h3>俄罗斯方块 <span class="badge hot">游戏</span></h3>
               <p>基于原生 JavaScript + Canvas 开发的经典俄罗斯方块游戏，实现了方块旋转、下落、消除、计分、等级递增等核心玩法。通过键盘控制与触屏手势双模式支持，提供多档难度选择与实时排行榜功能。</p>
@@ -117,7 +120,7 @@
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
 

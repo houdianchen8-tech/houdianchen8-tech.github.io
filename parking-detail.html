@@ -1,30 +1,33 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>停车场管理系统 | 侯殿臣</title>
     <meta name="description" content="停车场管理系统项目详情，Spring Boot + MySQL 实现，多角色权限管理，智能计费系统。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="projects">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="project-detail-hero container">
         <div class="detail-hero-copy">
           <a class="back-link" href="projects.html">← 返回项目</a>
@@ -47,7 +50,7 @@
           </div>
         </div>
         <div class="detail-hero-visual">
-          <img src="assets/project-parking.svg" alt="停车场管理系统界面" />
+          <img src="assets/project-parking.svg" alt="停车场管理系统界面" width="400" height="300" decoding="async" fetchpriority="high" />
           <div class="assistant-console">
             <div class="console-dots"><span></span><span></span><span></span></div>
             <p>// 系统架构</p>
@@ -82,14 +85,14 @@
       </section>
 
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>项目背景</h2>
-          <p>
-            随着城市化进程加快，停车场管理面临车位信息不透明、收费效率低、管理混乱等问题。传统人工管理模式已难以满足现代化停车场对高效、精准、智能化的管理需求。
-          </p>
-          <p>
-            本项目旨在通过信息化手段解决上述痛点，设计并实现一套集车位监控、车辆出入管理、智能计费、会员服务等功能于一体的停车场管理系统，提升停车场运营效率与用户体验。
-          </p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 项目背景
+
+随着城市化进程加快，停车场管理面临车位信息不透明、收费效率低、管理混乱等问题。传统人工管理模式已难以满足现代化停车场对高效、精准、智能化的管理需求。
+
+本项目旨在通过信息化手段解决上述痛点，设计并实现一套集车位监控、车辆出入管理、智能计费、会员服务等功能于一体的停车场管理系统，提升停车场运营效率与用户体验。
+          </template>
         </article>
         <aside class="side-panel project-summary">
           <h3>项目摘要</h3>
@@ -103,12 +106,12 @@
       </section>
 
       <section class="section container" id="features">
-        <div class="section-head compact">
+        <header class="section-head compact">
           <div>
             <h2>核心模块</h2>
             <p>涵盖停车场运营全流程</p>
           </div>
-        </div>
+        </header>
         <div class="feature-grid">
           <article class="detail-panel">
             <span class="tool-icon blue">P</span>
@@ -134,26 +137,27 @@
       </section>
 
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>数据库设计</h2>
-          <p>
-            采用 MySQL 关系型数据库，设计了车位表、车辆记录表、收费规则表、会员表等核心数据表。通过合理的索引设计与表关联优化，确保数据查询效率。
-          </p>
-          <ul class="check-list">
-            <li>车位表：区域编码、楼层号、车位编号、状态、类型</li>
-            <li>车辆记录表：车牌号、入场时间、出场时间、费用、车位 ID</li>
-            <li>收费规则表：时段、单价、封顶金额、适用角色</li>
-            <li>会员表：会员等级、余额、月卡有效期、绑定车牌</li>
-          </ul>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 数据库设计
+
+采用 MySQL 关系型数据库，设计了车位表、车辆记录表、收费规则表、会员表等核心数据表。通过合理的索引设计与表关联优化，确保数据查询效率。
+
+- 车位表：区域编码、楼层号、车位编号、状态、类型
+- 车辆记录表：车牌号、入场时间、出场时间、费用、车位 ID
+- 收费规则表：时段、单价、封顶金额、适用角色
+- 会员表：会员等级、余额、月卡有效期、绑定车牌
+          </template>
         </article>
-        <article class="content-panel">
-          <h2>设计亮点</h2>
-          <ul class="check-list">
-            <li>三种角色权限分级：管理员、收费员、会员，接口级权限校验</li>
-            <li>灵活的计费策略配置，支持后台动态调整收费标准</li>
-            <li>JWT Token 无状态认证，支持多端登录</li>
-            <li>按日期/时段/角色的多维度营收统计报表</li>
-          </ul>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 设计亮点
+
+- 三种角色权限分级：管理员、收费员、会员，接口级权限校验
+- 灵活的计费策略配置，支持后台动态调整收费标准
+- JWT Token 无状态认证，支持多端登录
+- 按日期/时段/角色的多维度营收统计报表
+          </template>
         </article>
       </section>
 
@@ -167,6 +171,6 @@
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

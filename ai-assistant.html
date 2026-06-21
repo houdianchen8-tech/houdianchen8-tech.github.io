@@ -1,30 +1,33 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>智慧校园 AI 助手 | 侯殿臣</title>
     <meta name="description" content="智慧校园 AI 助手项目详情，基于 RAG 架构的校园问答系统，传智播客实习项目。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="projects">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>?</span><span>?</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>&#9728;</span><span>&#9790;</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <!-- ===== Hero（保留） ===== -->
       <section class="project-detail-hero container">
         <div class="detail-hero-copy">
@@ -36,11 +39,11 @@
           </p>
           <div class="tags detail-tags">
             <span>RAG</span>
-            <span>Redis</span>
+            <span>MySQL</span>
             <span>Redis</span>
             <span>Java</span>
             <span>Prompt Engineering</span>
-            <span>向量数据库</span>
+            <span>语义检索</span>
           </div>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#features">查看能力 <span>↓</span></a>
@@ -48,7 +51,7 @@
           </div>
         </div>
         <div class="detail-hero-visual">
-          <img src="assets/project-ai.jpg" alt="智慧校园 AI 助手项目界面" />
+          <img src="assets/project-ai.webp" alt="智慧校园 AI 助手项目界面" width="1920" height="1020" decoding="async" fetchpriority="high" />
           <div class="assistant-console">
             <div class="console-dots"><span></span><span></span><span></span></div>
             <p>// RAG 检索流程</p>
@@ -84,14 +87,18 @@
 
       <!-- ===== 板块2: 项目概述 + 项目摘要（左右两栏） ===== -->
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>项目概述</h2>
-          <p>智慧校园 AI 助手是一个面向校园师生的 AI 智能问答系统，基于 RAG（检索增强生成）架构设计。系统实现对课程信息、校园公告、办事流程等多源校园数据的语义检索与智能应答，帮助师生快速获取所需信息。</p>
-          <p>项目采用 Java / Spring Boot 构建后端服务，Redis 实现向量检索与缓存，MySQL 存储结构化数据，通过大语言模型驱动自然语言问答。我在实习期间作为后端核心开发者，负责数据服务模块开发、知识检索链路构建与系统优化工作。</p>
-          <p>
-            项目地址：<a href="https://github.com/houdianchen8-tech" target="_blank">https://github.com/houdianchen8-tech</a><br />
-            在线演示：请联系获取演示账号
-          </p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 项目概述
+
+智慧校园 AI 助手是一个面向校园师生的 AI 智能问答系统，基于 RAG（检索增强生成）架构设计。系统实现对课程信息、校园公告、办事流程等多源校园数据的语义检索与智能应答，帮助师生快速获取所需信息。
+
+项目采用 Java / Spring Boot 构建后端服务，Redis 实现向量检索与缓存，MySQL 存储结构化数据，通过大语言模型驱动自然语言问答。我在实习期间作为后端核心开发者，负责数据服务模块开发、知识检索链路构建与系统优化工作。
+
+项目地址：[https://github.com/houdianchen8-tech](https://github.com/houdianchen8-tech)
+
+在线演示：请联系获取演示账号
+          </template>
         </article>
         <aside class="side-panel project-summary">
           <h3>项目摘要</h3>
@@ -161,19 +168,38 @@
 
       <!-- ===== 板块6: 系统架构 ===== -->
       <section class="section container">
-        <article class="content-panel">
-          <h2>系统架构</h2>
-          <p>系统采用 RAG（检索增强生成）架构设计，核心流程从用户输入问题开始，经过意图识别、向量检索、上下文拼接，最终由大模型生成精准回答。</p>
-          <div class="architecture-flow" aria-label="系统架构流程">
-            <span>用户问题</span>
-            <span>意图识别<br/>与预处理</span>
-            <span>Redis<br/>向量检索</span>
-            <span>上下文拼接</span>
-            <span>LLM<br/>生成回答</span>
-            <span>结果返回</span>
+        <header class="section-head compact">
+          <div>
+            <h2>RAG 问答流程</h2>
+            <p>把用户问题转化为可检索、可拼接、可生成的完整链路</p>
           </div>
-          <p style="margin-top:1.5rem">完整流程：用户输入问题 → 意图识别与预处理 → 从 Redis 向量库检索相关文档片段 → 检索结果与用户问题拼接为 Prompt → 调用大模型生成回答 → 返回结果并记录对话上下文</p>
-        </article>
+        </header>
+        <div class="rag-flow" aria-label="RAG 问答流程">
+          <article class="flow-node" data-step="01">
+            <h3>用户问题</h3>
+            <p>接收自然语言提问，记录用户上下文与会话状态。</p>
+          </article>
+          <article class="flow-node" data-step="02">
+            <h3>意图解析</h3>
+            <p>识别问题类型，过滤无效输入并补齐查询条件。</p>
+          </article>
+          <article class="flow-node" data-step="03">
+            <h3>知识检索</h3>
+            <p>从校园知识库召回课程、公告、流程等相关片段。</p>
+          </article>
+          <article class="flow-node" data-step="04">
+            <h3>上下文拼接</h3>
+            <p>按相关性排序、去重，把检索结果组织进 Prompt。</p>
+          </article>
+          <article class="flow-node" data-step="05">
+            <h3>模型生成</h3>
+            <p>调用大模型生成回答，并约束输出格式与边界。</p>
+          </article>
+          <article class="flow-node" data-step="06">
+            <h3>结果返回</h3>
+            <p>返回答案，记录日志，为后续优化提供数据依据。</p>
+          </article>
+        </div>
       </section>
 
       <!-- ===== 板块7: 核心功能模块 ===== -->
@@ -204,38 +230,50 @@
 
       <!-- ===== 板块8: 技术难点与解决方案（左右两栏） ===== -->
       <section class="section container detail-layout">
-        <article class="content-panel">
-          <h2>技术难点与解决方案</h2>
-          <p><strong>难点：AI 回答不稳定 / 质量波动</strong></p>
-          <p>同样的提问在不同轮次得到的回答质量不一致，有时会遗漏关键信息，影响用户体验。</p>
-          <p><strong>解决方案：</strong></p>
-          <ul class="check-list">
-            <li>优化 Prompt 模板结构：明确角色设定、输出格式和约束条件，减少自由生成的不确定性</li>
-            <li>改进上下文拼接策略：优先召回相关性最高的前 K 条文档片段，确保关键信息优先进入 Prompt</li>
-            <li>引入检索结果去重与排序机制，减少噪声信息对模型生成的干扰</li>
-            <li>实施缓存策略 + 异步请求优化，接口响应延迟降低约 35%</li>
-          </ul>
-          <p>最终效果：回答质量与稳定性显著提升，关键信息覆盖率达到预期目标。</p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 技术难点与解决方案
+
+**难点：AI 回答不稳定 / 质量波动**
+
+同样的提问在不同轮次得到的回答质量不一致，有时会遗漏关键信息，影响用户体验。
+
+解决方案：
+
+- 优化 Prompt 模板结构：明确角色设定、输出格式和约束条件，减少自由生成的不确定性
+- 改进上下文拼接策略：优先召回相关性最高的前 K 条文档片段，确保关键信息优先进入 Prompt
+- 引入检索结果去重与排序机制，减少噪声信息对模型生成的干扰
+- 实施缓存策略 + 异步请求优化，接口响应延迟降低约 **35%**
+
+最终效果：回答质量与稳定性显著提升，关键信息覆盖率达到预期目标。
+          </template>
         </article>
-        <article class="content-panel">
-          <h2>优化成果</h2>
-          <p>通过系统性优化，项目在性能与开发效率方面取得显著成果：</p>
-          <ul class="check-list">
-            <li>缓存策略 + 异步请求优化 → 接口响应延迟降低约 <strong>35%</strong></li>
-            <li>Prompt 模板优化 → 回答质量与稳定性明显提升</li>
-            <li>Cursor 辅助编码 → 模块开发周期缩短约 <strong>40%</strong></li>
-            <li>完备的监控兜底机制 → 多用户并发场景稳定运行</li>
-          </ul>
-          <p>项目最终实现了 4 大核心模块（数据服务、向量检索、上下文工程、多轮对话），接入多源校园数据，开发 15+ 个后端接口。</p>
+        <article class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+## 优化成果
+
+通过系统性优化，项目在性能与开发效率方面取得显著成果：
+
+- 缓存策略 + 异步请求优化 -> 接口响应延迟降低约 **35%**
+- Prompt 模板优化 -> 回答质量与稳定性明显提升
+- Cursor 辅助编码 -> 模块开发周期缩短约 **40%**
+- 完备的监控兜底机制 -> 多用户并发场景稳定运行
+
+项目最终实现了 4 大核心模块（数据服务、向量检索、上下文工程、多轮对话），接入多源校园数据，开发 15+ 个后端接口。
+          </template>
         </article>
       </section>
 
       <!-- ===== 板块9: 项目总结 ===== -->
       <section class="section container cta-band">
-        <div>
-          <h2>项目总结</h2>
-          <p>通过该项目，我深入实践了 RAG 架构的完整实现流程——从多源数据接入与向量化、检索策略设计，到 Prompt 工程与模型调用封装，积累了 AI 应用从 0 到 1 的落地经验。项目不仅提升了我对检索增强生成技术的理解，也让我掌握了在真实业务场景中进行性能优化和质量保障的方法。</p>
-          <p>后续优化方向：引入回答质量自动评估机制、完善单元测试覆盖、探索更多向量检索策略以进一步提升检索精度。</p>
+        <div class="markdown-content" data-markdown>
+          <template type="text/markdown">
+## 项目总结
+
+通过该项目，我深入实践了 RAG 架构的完整实现流程：从多源数据接入与向量化、检索策略设计，到 Prompt 工程与模型调用封装，积累了 AI 应用从 0 到 1 的落地经验。项目不仅提升了我对检索增强生成技术的理解，也让我掌握了在真实业务场景中进行性能优化和质量保障的方法。
+
+后续优化方向：引入回答质量自动评估机制、完善单元测试覆盖、探索更多向量检索策略以进一步提升检索精度。
+          </template>
         </div>
         <a class="btn btn-primary" href="contact.html">联系我 <span>→</span></a>
       </section>
@@ -248,6 +286,6 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

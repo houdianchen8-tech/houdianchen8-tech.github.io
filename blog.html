@@ -1,30 +1,33 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>博客 | 侯殿臣</title>
     <meta name="description" content="侯殿臣的技术博客，记录 Java 后端开发、RAG 实践、项目经验和学术成果。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="blog">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="page-hero container">
         <span class="eyebrow">Blog</span>
         <h1>技术实践与学术思考</h1>
@@ -34,7 +37,7 @@
       <section class="section container blog-layout">
         <div class="blog-main">
           <article class="post-card" id="rag-practice">
-            <img src="assets/article-agent.jpg" alt="RAG 架构插图" />
+            <img src="assets/01-rag-campus-qa.webp" alt="RAG 架构插图" width="126" height="62" decoding="async" loading="lazy" />
             <div>
               <div class="post-meta">2026-03 · AI · 10 分钟阅读</div>
               <h2>从零构建 RAG 系统：智慧校园问答实践</h2>
@@ -44,7 +47,7 @@
           </article>
 
           <article class="post-card" id="sql-optimization">
-            <img src="assets/article-toolbox.jpg" alt="SQL 优化插图" />
+            <img src="assets/02-springboot-performance.webp" alt="SQL 优化插图" width="126" height="62" decoding="async" loading="lazy" />
             <div>
               <div class="post-meta">2026-02 · 后端 · 7 分钟阅读</div>
               <h2>Spring Boot 项目性能优化实录：从慢查询到索引优化</h2>
@@ -54,7 +57,7 @@
           </article>
 
           <article class="post-card" id="paper">
-            <img src="assets/article-next.jpg" alt="学术论文插图" />
+            <img src="assets/03-project-to-paper.webp" alt="学术论文插图" width="126" height="62" decoding="async" loading="lazy" />
             <div>
               <div class="post-meta">2024.10 · 学术 · 5 分钟阅读</div>
               <h2>从项目到论文：以第一作者在《环球科学》发表经验分享</h2>
@@ -64,7 +67,7 @@
           </article>
 
           <article class="post-card" id="wechat-miniapp">
-            <img src="assets/article-product.jpg" alt="微信小程序插图" />
+            <img src="assets/04-wechat-travel-miniapp.webp" alt="微信小程序插图" width="126" height="62" decoding="async" loading="lazy" />
             <div>
               <div class="post-meta">2024.06 · 前端 · 6 分钟阅读</div>
               <h2>微信小程序开发实战：文旅 + 定制出行服务</h2>
@@ -92,6 +95,6 @@
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

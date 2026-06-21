@@ -1,32 +1,35 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>关于我 | 侯殿臣</title>
     <meta name="description" content="了解侯殿臣的教育背景、技术能力、实习经历和项目经验。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="about">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="about-hero container">
-        <img src="assets/avatar.jpg" alt="侯殿臣头像" />
+        <img src="assets/avatar.webp" alt="侯殿臣头像" width="1024" height="1024" decoding="async" fetchpriority="high" />
         <div>
           <span class="eyebrow">About</span>
           <h1>工程能力驱动 AI 落地</h1>
@@ -40,62 +43,62 @@
 
       <!-- 教育背景 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>🎓 教育背景</h2></div></div>
+        <header class="section-head compact"><div><h2>🎓 教育背景</h2></div></header>
         <div class="content-panel">
-          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <div class="info-head">
             <div>
-              <h3 style="margin:0;font-size:18px;">山西科技学院</h3>
-              <p style="margin:4px 0 0;color:var(--muted);">计算机科学与技术专业 本科</p>
+              <h3 class="info-title">山西科技学院</h3>
+              <p class="info-subtitle">计算机科学与技术专业 本科</p>
             </div>
-            <div style="text-align:right;">
-              <p style="margin:0;color:var(--blue);font-weight:700;">2022.09 – 2026.06</p>
-              <p style="margin:4px 0 0;color:var(--muted);">GPA：3.43 / 4.0</p>
+            <div class="align-end">
+              <p class="info-accent">2022.09 – 2026.06</p>
+              <p class="info-subtitle">GPA：3.43 / 4.0</p>
             </div>
           </div>
-          <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;">
-            <span class="chip" style="cursor:default;">数据结构</span>
-            <span class="chip" style="cursor:default;">操作系统</span>
-            <span class="chip" style="cursor:default;">计算机网络</span>
-            <span class="chip" style="cursor:default;">数据库原理</span>
+          <div class="chip-row">
+            <span class="chip static">数据结构</span>
+            <span class="chip static">操作系统</span>
+            <span class="chip static">计算机网络</span>
+            <span class="chip static">数据库原理</span>
           </div>
-          <p style="margin-top:12px;">连续获得校级奖学金及国家励志奖学金 · 多次获评"三好学生" · 以第一作者身份在《环球科学》发表学术论文</p>
+          <p class="panel-note">连续获得校级奖学金及国家励志奖学金 · 多次获评"三好学生" · 以第一作者身份在《环球科学》发表学术论文</p>
         </div>
       </section>
 
       <!-- 荣誉奖项 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>🏆 荣誉与奖项</h2></div></div>
-        <div class="stack-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+        <header class="section-head compact"><div><h2>🏆 荣誉与奖项</h2></div></header>
+        <div class="grid-3-panel">
           <div class="detail-panel">
             <h3>一等奖学金 × 2</h3>
-            <p style="color:var(--muted);">校级一等奖学金，连续两年</p>
+            <p>校级一等奖学金，连续两年</p>
           </div>
           <div class="detail-panel">
             <h3>二等奖学金 × 5</h3>
-            <p style="color:var(--muted);">校级二等奖学金，五次获得</p>
+            <p>校级二等奖学金，五次获得</p>
           </div>
           <div class="detail-panel">
             <h3>国家励志奖学金</h3>
-            <p style="color:var(--muted);">国家励志奖学金 1 次</p>
+            <p>国家励志奖学金 1 次</p>
           </div>
           <div class="detail-panel">
             <h3>三好学生</h3>
-            <p style="color:var(--muted);">多次获评校级三好学生</p>
+            <p>多次获评校级三好学生</p>
           </div>
           <div class="detail-panel">
             <h3>优秀志愿者</h3>
-            <p style="color:var(--muted);">优秀志愿者荣誉称号</p>
+            <p>优秀志愿者荣誉称号</p>
           </div>
           <div class="detail-panel">
             <h3>《环球科学》论文</h3>
-            <p style="color:var(--muted);">第一作者发表学术论文</p>
+            <p>第一作者发表学术论文</p>
           </div>
         </div>
       </section>
 
       <!-- 技术能力 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>💻 技术能力</h2></div></div>
+        <header class="section-head compact"><div><h2>💻 技术能力</h2></div></header>
         <div class="two-column">
           <div class="content-panel">
             <h3>语言与框架</h3>
@@ -109,8 +112,8 @@
             <h3>AI 与 LLM 工程</h3>
             <ul class="check-list">
               <li>理解大语言模型基本原理（Transformer 架构 / Attention 机制）</li>
-              <li>具备 RAG 系统从零构建经验，熟练使用 Redis</li>
-              <li>精通 Prompt Engineering 与上下文工程方法</li>
+              <li>具备 RAG 系统构建经验，熟悉 Redis 缓存与检索结果优化</li>
+              <li>熟悉 Prompt 设计与上下文工程方法，能结合 RAG 场景进行效果优化</li>
               <li>能够独立完成知识库构建、模型调用封装与效果调优</li>
             </ul>
           </div>
@@ -119,22 +122,22 @@
 
       <!-- 实习经历 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>💼 实习经历</h2></div></div>
-        <div class="content-panel" style="margin-bottom:16px;">
-          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+        <header class="section-head compact"><div><h2>💼 实习经历</h2></div></header>
+        <div class="content-panel spaced">
+          <div class="info-head">
             <div>
-              <h3 style="margin:0;font-size:18px;">智慧校园 AI 助手系统（RAG 架构）</h3>
-              <p style="margin:4px 0 0;color:var(--cyan);">后端核心开发者</p>
+              <h3 class="info-title">智慧校园 AI 助手系统（RAG 架构）</h3>
+              <p class="info-role">后端核心开发者</p>
             </div>
-            <div style="text-align:right;">
-              <p style="margin:0;color:var(--muted);">江苏传智播客教育科技股份有限公司</p>
-              <p style="margin:4px 0 0;color:var(--blue);font-weight:700;">2025.12 – 2026.02</p>
+            <div class="align-end">
+              <p class="muted-text">江苏传智播客教育科技股份有限公司</p>
+              <p class="info-accent">2025.12 – 2026.02</p>
             </div>
           </div>
-          <ul class="check-list" style="margin-top:12px;">
+          <ul class="check-list">
             <li>参与构建基于 RAG 架构的智慧校园 AI 问答系统，实现对校园多源数据的语义检索与智能应答</li>
             <li>负责核心数据服务模块开发，完成用户请求解析、上下文拼接、模型调用封装等关键流程</li>
-            <li>构建基于向量数据库的知识检索链路，通过缓存策略与异步请求优化将接口响应延迟降低约 35%</li>
+            <li>构建知识检索链路，通过缓存策略与异步请求优化将接口响应延迟降低约 35%</li>
             <li>持续优化 Prompt 设计与多轮对话控制策略，提升模型输出质量</li>
             <li>建立日志监控与异常处理机制，确保多用户并发场景下的系统稳定运行</li>
             <li>借助 Cursor 辅助完成部分样板代码编写，模块开发周期缩短约 40%</li>
@@ -144,28 +147,63 @@
 
       <!-- 个人陈述 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>📝 个人陈述</h2></div></div>
-        <div class="content-panel">
-          <p>我具备扎实的计算机基础与良好的工程实践能力，在后端开发的基础上逐步深入 AI 应用方向，形成了以"工程能力驱动 AI 落地"的技术路径。</p>
-          <p>在实习和项目经历中，我不仅关注功能实现，更重视系统的稳定性、性能与可扩展性，并持续探索如何将大模型能力真正应用于实际业务场景中。</p>
-          <p>面对快速发展的技术浪潮，我始终保持学习的主动性，未来希望在 Java 后端与 AI 应用方向持续深耕，参与构建具备实际价值的智能系统。</p>
+        <header class="section-head compact"><div><h2>📝 个人陈述</h2></div></header>
+        <div class="content-panel markdown-content" data-markdown>
+          <template type="text/markdown">
+我具备扎实的计算机基础与良好的工程实践能力，在后端开发的基础上逐步深入 AI 应用方向，形成了以“工程能力驱动 AI 落地”的技术路径。
+
+在实习和项目经历中，我不仅关注功能实现，更重视系统的稳定性、性能与可扩展性，并持续探索如何将大模型能力真正应用于实际业务场景中。
+
+面对快速发展的技术浪潮，我始终保持学习的主动性，未来希望在 Java 后端与 AI 应用方向持续深耕，参与构建具备实际价值的智能系统。
+          </template>
         </div>
       </section>
 
       <!-- 时间线 -->
       <section class="section container">
-        <div class="section-head compact"><div><h2>📅 经历时间线</h2><p>关键节点</p></div></div>
-        <div class="timeline">
-          <div><time>2025.12</time><h3>传智播客 · AI 实习</h3><p>后端核心开发者，参与构建智慧校园 AI 问答系统，基于 RAG 架构实现多源数据语义检索。</p></div>
-          <div><time>2025.11</time><h3>高校物品捐赠系统</h3><p>项目负责人，Spring Boot + MySQL 实现捐赠管理平台，查询效率优化提升 30%。</p></div>
-          <div><time>2023.04</time><h3>向晋特种行小程序</h3><p>项目负责人，文旅+定制出行微信小程序，以第一作者在《环球科学》发表论文。</p></div>
-          <div><time>2022.09</time><h3>山西科技学院</h3><p>计算机科学与技术专业本科入学，连续获得奖学金及荣誉称号。</p></div>
+        <header class="section-head compact"><div><h2>📅 经历时间线</h2><p>关键节点</p></div></header>
+        <div class="experience-roadmap" aria-label="个人经历时间线">
+          <article class="roadmap-item">
+            <header class="roadmap-head">
+              <time datetime="2022-09">2022.09</time>
+              <h3>本科入学</h3>
+            </header>
+            <p>计算机科学与技术专业，系统学习数据结构、网络、操作系统和数据库。</p>
+          </article>
+          <article class="roadmap-item">
+            <header class="roadmap-head">
+              <time datetime="2023-04">2023.04</time>
+              <h3>小程序项目</h3>
+            </header>
+            <p>负责文旅 + 定制出行小程序原型，沉淀为论文成果。</p>
+          </article>
+          <article class="roadmap-item">
+            <header class="roadmap-head">
+              <time datetime="2025-11">2025.11</time>
+              <h3>捐赠系统</h3>
+            </header>
+            <p>负责 Spring Boot + MySQL 后端，完成数据库建模和核心业务流程。</p>
+          </article>
+          <article class="roadmap-item">
+            <header class="roadmap-head">
+              <time datetime="2025-12">2025.12</time>
+              <h3>AI 实习</h3>
+            </header>
+            <p>参与智慧校园 RAG 问答系统，负责数据服务、上下文拼接和接口优化。</p>
+          </article>
+          <article class="roadmap-item">
+            <header class="roadmap-head">
+              <time datetime="2026-06">2026.06</time>
+              <h3>毕业求职</h3>
+            </header>
+            <p>目标方向为 Java 后端开发、AI 应用工程和业务系统开发。</p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
 

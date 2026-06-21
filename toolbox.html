@@ -1,51 +1,93 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>工具箱 | 侯殿臣</title>
     <meta name="description" content="侯殿臣常用的开发工具、AI 框架和技术栈清单。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=1782055001" />
   </head>
   <body data-page="toolbox">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
+        <a class="brand" href="index.html" aria-label="侯殿臣首页"><span class="brand-mark">HDC</span><span>侯殿臣</span></a>
         <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
         <nav class="nav-links" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="blog.html" data-nav="blog">博客</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="toolbox.html" data-nav="toolbox">工具箱</a>
-          <a href="contact.html" data-nav="contact">联系我</a>
+          <ul class="nav-list">
+            <li><a href="index.html" data-nav="home">首页</a></li>
+            <li><a href="projects.html" data-nav="projects">项目</a></li>
+            <li><a href="blog.html" data-nav="blog">博客</a></li>
+            <li><a href="about.html" data-nav="about">关于我</a></li>
+            <li><a href="toolbox.html" data-nav="toolbox">工具箱</a></li>
+            <li><a href="contact.html" data-nav="contact">联系我</a></li>
+          </ul>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="切换主题"><span>☀</span><span>☾</span></button>
+        <button class="theme-toggle" type="button" aria-label="切换主题" aria-pressed="false"><span>☀</span><span>☾</span></button>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <section class="page-hero container">
         <span class="eyebrow">Toolbox</span>
         <h1>我的技术栈与常用工具</h1>
         <p>这是我日常开发中使用的语言、框架和工具清单，涵盖后端开发、AI 应用和项目管理。</p>
       </section>
 
-      <section class="section container toolbox-grid">
-        <article class="tool-card"><span class="tool-icon blue">JV</span><h2>Java / Spring Boot</h2><p>主力后端技术栈，具备完整后端开发与服务拆分能力，熟悉 RESTful API 设计规范。</p></article>
-        <article class="tool-card"><span class="tool-icon green">DB</span><h2>MySQL</h2><p>熟练使用 MySQL 进行数据库设计与优化，具备慢查询分析与索引优化经验。</p></article>
-        <article class="tool-card"><span class="tool-icon violet">AI</span><h2>Redis</h2><p>向量数据库，用于 RAG 系统中的语义检索，实现知识库的向量化存储与相似度检索。</p></article>
-        <article class="tool-card"><span class="tool-icon cyan">LL</span><h2>LLM / Prompt Engineering</h2><p>理解 Transformer 架构与 Attention 机制，精通 Prompt 设计与上下文工程方法。</p></article>
-        <article class="tool-card"><span class="tool-icon orange">RG</span><h2>RAG 架构</h2><p>具备从零构建 RAG 系统的完整经验，覆盖数据向量化、检索链路、模型调用和效果评估。</p></article>
-        <article class="tool-card"><span class="tool-icon cyan">VC</span><h2>Vibe Coding</h2><p>善用 AI 辅助编程工具（Cursor 等）加速原型验证与模块开发，核心理念是用自然语言描述需求、由 AI 生成代码骨架，开发者聚焦业务逻辑与架构决策，开发周期缩短约 40%。</p></article>
-        <article class="tool-card"><span class="tool-icon gray">MP</span><h2>微信小程序</h2><p>微信小程序开发经验，主导完成"文旅 + 定制出行"小程序产品原型的全流程开发。</p></article>
-        <article class="tool-card"><span class="tool-icon green">ID</span><h2>IntelliJ IDEA</h2><p>主力 Java 开发 IDE，配合 Spring Boot 插件和调试工具高效开发。</p></article>
-        <article class="tool-card"><span class="tool-icon blue">GH</span><h2>Git / GitHub</h2><p>版本控制与协作开发，GitHub Actions 自动化部署。</p></article>
+      <section class="section container">
+        <header class="section-head compact">
+          <div>
+            <h2>技术栈矩阵</h2>
+            <p>按求职方向组织能力，方便快速判断匹配度</p>
+          </div>
+        </header>
+        <div class="skill-matrix">
+          <article class="skill-group">
+            <header><span>BE</span><h2>后端开发</h2></header>
+            <p>围绕 Spring Boot 项目完成接口、鉴权、业务模块和服务集成。</p>
+            <ul class="skill-list">
+              <li>Java <em>主力</em></li>
+              <li>Spring Boot <em>项目经验</em></li>
+              <li>RESTful API <em>熟悉</em></li>
+              <li>MyBatis-Plus <em>项目经验</em></li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <header><span>DB</span><h2>数据库与缓存</h2></header>
+            <p>关注表结构设计、慢查询分析、索引优化和热点数据缓存。</p>
+            <ul class="skill-list">
+              <li>MySQL <em>项目经验</em></li>
+              <li>索引 / 分页 <em>优化实践</em></li>
+              <li>Redis <em>缓存实践</em></li>
+              <li>数据建模 <em>13 表设计</em></li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <header><span>AI</span><h2>AI 应用工程</h2></header>
+            <p>具备 RAG 链路实践，能完成检索、上下文拼接和模型调用封装。</p>
+            <ul class="skill-list">
+              <li>RAG 架构 <em>实习实践</em></li>
+              <li>Prompt 设计 <em>熟悉</em></li>
+              <li>上下文工程 <em>项目经验</em></li>
+              <li>LLM 接入 <em>封装实践</em></li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <header><span>FE</span><h2>前端与工具</h2></header>
+            <p>能完成项目展示、后台页面对接和 AI 辅助开发提效。</p>
+            <ul class="skill-list">
+              <li>HTML / CSS / JS <em>个人站</em></li>
+              <li>Vue3 / Element Plus <em>项目使用</em></li>
+              <li>Git / GitHub <em>常用</em></li>
+              <li>Cursor/codex <em>辅助开发</em></li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 侯殿臣. All rights reserved.</span><span>用 ❤ 和代码创造价值</span></div></footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
 
